@@ -5,20 +5,17 @@
 .content {
   display: grid;
   align-items: center;
-  grid-template-rows: : 1fr 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
   }
 
 .content:nth-child(even) >img {
   order:2;
   }
 
-.content img {
-	width: 50%;
-	height: 50%;
 }
 
-}
+
 
 
 
