@@ -1,15 +1,35 @@
-@media screen and (min-width: 640px) {
 
+/*-----  Typography -----*/
+
+.quote {
+   
+   flex-wrap: wrap;
+   padding: 4rem;
+   text-align: center;
+   font-family: "Avenir Next";
+   font-size: 18px;
+   font-weight: bold;
+   font-style: italic;
+   line-height: 50px;
 }
+
+.content p {
+  text-align: center;
+  font-family: "Avenir Next";
+  font-style: italic;
+  font-weight: bold;
+ }
+
+/*-------- Grid --------*/
+
+@media screen and (min-width: 640px) {
 
 .content {
   display: grid;
   align-items: center;
+  align-content: center;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0;
-  text-align: center;
-  font-family: "Avenir Next";
-  font-style: italic;
  }
 
 .content:nth-child(even) >img {
@@ -17,8 +37,3 @@
   }
 
 }
-
-
-
-
-
