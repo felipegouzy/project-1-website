@@ -1,8 +1,32 @@
 
-/*-----  Typography -----*/
+/*-----  Text -----*/
+h1 a {
 
-.quote {
-   
+  text-decoration: none;
+  color: white; 
+  font-family: "Avenir Next";
+  font-style: italic;
+  font-size: 2rem; 
+}
+
+h1 a:hover {
+  color: #3D4852;
+}
+
+li a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white; 
+  font-family: "Avenir Next";
+  font-style: italic; 
+  font-size: 1.25rem;
+}
+
+li a:hover {
+  color: #3D4852;
+}
+
+.quote {  
    flex-wrap: wrap;
    padding: 4rem;
    text-align: center;
@@ -13,12 +37,41 @@
    line-height: 50px;
 }
 
-.content a {
+ .content,
+ .content a {
+  color:black;
+  line-height:50px;
+  text-decoration: none;
   text-align: center;
   font-family: "Avenir Next";
   font-style: italic;
   font-weight: bold;
  }
+
+.content a:hover {
+  color: #6CB2EB;
+ }
+
+footer a {
+  text-decoration: none;
+  color: white; 
+  font-family: "Avenir Next";
+  font-style: italic; 
+  font-size: 1.25rem;
+}
+
+footer a:hover {
+  color: #3D4852;
+}
+
+footer p {
+  line-height: 50px;
+  text-decoration: none;
+  color: white; 
+  font-family: "Avenir Next";
+  font-style: italic; 
+  font-size: 1.25rem;
+}
 
 /*-------- Grid --------*/
 
@@ -34,6 +87,6 @@
 
 .content:nth-child(even) >img {
   order:2;
-  }
+}
 
 }
