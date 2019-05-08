@@ -1,5 +1,12 @@
 
-/*-----  Text -----*/
+/*-----  Text & Alignment -----*/
+
+#myHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 h1 a {
 
   text-decoration: none;
@@ -25,6 +32,10 @@ li a {
 li a:hover {
   color: #3D4852;
 }
+.font {
+  font-family: "Avenir Next";
+  font-style: italic; 
+}
 
 .quote {  
    flex-wrap: wrap;
@@ -37,15 +48,18 @@ li a:hover {
    line-height: 50px;
 }
 
+
  .content,
  .content a {
-  color:black;
-  line-height:50px;
-  text-decoration: none;
-  text-align: center;
+  align-items: center;
+  color: black;
   font-family: "Avenir Next";
+  font-size: 24px;
   font-style: italic;
   font-weight: bold;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
  }
 
 .content a:hover {
@@ -87,6 +101,6 @@ footer p {
 
 .content:nth-child(even) >img {
   order:2;
-}
+ }
 
 }

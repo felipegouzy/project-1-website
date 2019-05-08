@@ -9,7 +9,7 @@
 	<title>Felipe Gouzy</title>
 </head>
 <body>
-	<header class="bg-blue-light flex items-center justify-between p-4">
+	<header class="bg-blue-light flex items-center justify-between p-4" id="myHeader">
 	<h1 class="text-xl">
 		<a href="#">
 			Felipe Gouzy
@@ -63,7 +63,7 @@
 
   </div>
 
-  <footer class="bg-blue-light text-white md:flex items-center  justify-between p-4">
+  <footer class="bg-blue-light text-white md:flex sm:text-center  md: text-center items-center  justify-between p-4">
 	
 		<script type="text/javascript" language="javascript"></script>
 		
@@ -73,6 +73,21 @@
 			Copyright 2019 Felipe Gouzy 
 	    </p>
  </footer>
- 		
+ 
+ <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
